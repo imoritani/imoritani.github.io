@@ -1,0 +1,96 @@
+
+.container-fluid{
+  padding: auto 60px;
+}
+
+body{
+/*  font-family: "Proxima Nova Regular","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif; */
+font-family: "メイリオ";
+}
+
+header{
+  margin: 50px 0;
+}
+
+
+.row{
+  padding-bottom: 30px;
+}
+
+
+#AboutBox, #PortfolioBox, #ContactBox{
+  margin-top:-50px;
+  padding-top:50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  
+  text-align: center;
+}
+
+#AboutBox {
+  background-color: #cfd8dc;
+}
+
+.row > h2{
+  text-align: left;
+}
+
+footer {
+  border-top: 1px solid#e7e7e7;
+  background-color: #909090;
+  text-align: center;
+}
+
+.copyright {
+  padding: 20px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.carousel {
+  margin: auto;
+  width:  70%;  /*サイズ指定*/
+}
+
+/* 未作成のためグレーアウト*/
+.carousel img {
+  height: 100%;
+  width:  100%;
+  -webkit-filter: grayscale(0.1); /* Webkit */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(0.1); /* W3C */
+  opacity: 0.5;
+}
+
+nav {
+  text-align: center;
+}
+
+#navBarMenu ul li{
+  padding: 0px 20px;
+}
+
+.snslogo{
+  height:100px;
+  width: 100px;
+}
+
+.sns_title{
+  padding-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+}
