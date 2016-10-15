@@ -19,8 +19,33 @@
 　　　　    $(".navbar-collapse").collapse('hide');
 　　　　  });
 　　　　});
+　　　　
+　　　　$(document).scroll(function() {    
+　　　　  var scrollPos = $(this).scrollTop();
+　　　　  var aboutPos = $("#AboutBox").offset().top;
+　　　　  var portfolioPos = $("#PortfolioBox").offset().top - 100;
+　　　　  var contactPos = $("#ContactBox").offset().top  - 400; // offset
+
+　　　　  if(scrollPos < portfolioPos){
+　　　　    $("#aboutIDHeader").addClass("active");
+　　　　  }else{
+　　　　    $("#aboutIDHeader").removeClass("active");
+　　　　  }
+　　　　  
+　　　　  if ( (portfolioPos <= scrollPos) && (scrollPos < contactPos) ) {
+　　　　    $("#portfolioIDHeader").addClass("active");
+　　　　  } else {
+　　　　      $("#portfolioIDHeader").removeClass("active");
+　　　　  }
+　　　　  
+　　　　  if(contactPos < scrollPos){
+　　　　      $("#contactIDHeader").addClass("active");
+　　　　  }else{
+　　　　      $("#contactIDHeader").removeClass("active");
+　　　　  }
+　　　　}
+　　　　  );
 　　</script>
-    
 });
   </head>
   <body>
@@ -41,9 +66,9 @@
           </div>
           <div class="collapse navbar-collapse" id="navBarMenu">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#AboutBox">About</a></li>
-              <li><a href="#PortfolioBox">Portfolio</a></li>
-              <li><a href="#ContactBox">Contact</a></li>
+              <li id="aboutIDHeader" class="active"><a href="#AboutBox">About</a></li>
+              <li id="portfolioIDHeader"><a href="#PortfolioBox">Portfolio</a></li>
+              <li id="contactIDHeader"><a href="#ContactBox">Contact</a></li>
             </ul>
           </div>
         </div>
