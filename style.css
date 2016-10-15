@@ -77,20 +77,30 @@ nav {
 
 .sns_title{
   padding-top: 5px;
-  font-size: 14px;
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  body {
-    font-size: 12px;
+  body, p {
+    font-size: 8px;
   }
   
   h1 {
-    font-size: 30px;
+    font-size: 14px;
   }
   
   h2 {
-    font-size: 24px;
+    font-size: 12px;
+  }
+  
+  .carousel-caption h1, p{
+    font-size: 8px;
+  }
+
+  .snslogo{
+    height:50px;
+    width: 50px;
+  }
+  
   }
 }
