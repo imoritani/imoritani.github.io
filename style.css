@@ -82,24 +82,24 @@ nav {
 
 @media (max-width: 768px) {
   body, p {
-    font-size: 8px;
-  }
-  
-  h1 {
-    font-size: 14px;
-  }
-  
-  h2 {
     font-size: 12px;
   }
   
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
   .carousel-caption h1, p{
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .snslogo{
-    height:50px;
-    width: 50px;
+    height:70px;
+    width: 70px;
   }
   
   }
